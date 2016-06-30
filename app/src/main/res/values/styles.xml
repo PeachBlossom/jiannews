@@ -1,0 +1,69 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <!--对应ActionBar的颜色-->
+        <item name="colorPrimary">@color/day_colorPrimary</item>
+        <!-- 对应状态栏的颜色 -->
+        <item name="colorPrimaryDark">@color/day_colorPrimaryDark</item>
+        <!-- 对应EditText编辑时、RadioButton选中、CheckBox等选中时的颜色-->
+        <item name="colorAccent">@color/day_colorPrimary</item>
+        <!--android底色-->
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:textColorLink">#0b9a27</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="editTextColor">@color/gray</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="textColor">@color/day_textColor</item>
+        <item name="infoTextColor">@color/day_infoTextColor</item>
+        <item name="layout_bg_normal">@color/day_layout_bg_normal</item>
+        <item name="lineColor">@color/day_line_color</item>
+        <item name="windows_bg">@color/day_windows_bg</item>
+        <!--<item name="sliding_block_bg">@drawable/image_sliding_block</item>-->
+        <item name="layout_item_bg">@drawable/day_list_item_background</item>
+        <item name="android:editTextColor">@color/day_edit_color</item>
+        <item name="android:textColorHint">@color/day_edit_hit_color</item>
+        <!--<item name="comment_reply_container_bg">@drawable/day_comment_reply_container_bg</item>-->
+        <!--<item name="message_bg_left">@drawable/chat_from_bg_normal</item>-->
+        <!--<item name="message_bg_right">@drawable/chat_to_bg_normal</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- 加载滚动条样式 -->
+    <style name="loading">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDrawable">@drawable/progressloading</item>
+        <item name="android:indeterminateDuration">1000</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+
+    <!-- 比较常用的宽高 -->
+    <style name="wrap_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="list_text_title" parent="@style/wrap_wrap">
+        <item name="android:textColor">?attr/textColor</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="list_text_info" parent="@style/wrap_wrap">
+        <item name="android:textColor">?attr/infoTextColor</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+</resources>
